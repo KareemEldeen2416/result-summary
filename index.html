@@ -5,43 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
-<body>
+<body class="website">
+  <div class="container">
 
-  Your Result
-  76
-  of 100
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <div class="result">
+      <span class="yourResult">Your result</span>
 
-  Reaction
-  80 / 100
+      <div class="resultContent">
+        <span class="resultPercent">76</span>
+        <span class="ofHundred">of 100</span>
+      </div>
+      <span class="great">Great</span>
+      <div class="content">You scored higher than 65% of the people who have taken these tests.</div>
+    </div>
 
-  Memory
-  92 / 100
+    <div class="summary">
+      <span class="summaryText">Summary</span>
+      <div class="tab red">
+        <img src="assets/images/icon-reaction.svg">
+        <span class="summaryAddress">Reaction</span>
+        <span class="grade">80</span>
+      </div>
+      <div class="tab yellow">
+        <img src="assets/images/icon-memory.svg">
+        <span class="summaryAddress">Memory</span>
+        <span class="grade">92</span>
+      </div>
+      <div class="tab green">
+        <img src="assets/images/icon-verbal.svg">
+        <span class="summaryAddress">Verbal</span>
+        <span class="grade">61</span>
+      </div>
+      <div class="tab blue">
+        <img src="assets/images/icon-visual.svg">
+        <span class="summaryAddress">Visual</span>
+        <span class="grade">72</span>
+      </div>
+      <button class="continue">Continue</button>
 
-  Verbal
-  61 / 100
+    </div>
 
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
